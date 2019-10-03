@@ -2,6 +2,7 @@ script:
 - echo 'test'
 
 jobs:
+  include:
   - os: osx
     osx_image: xcode6.4
     name: '10.10'
