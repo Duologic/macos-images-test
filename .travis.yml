@@ -1,0 +1,23 @@
+script:
+- echo 'test'
+
+jobs:
+  - os: osx
+    osx_image: xcode6.4
+    name: '10.10'
+  - os: osx
+    osx_image: xcode7.3 # macOS 10.11
+    name: '10.11'
+  - os: osx
+    osx_image: xcode8.3 # macOS 10.12
+    name: '10.12'
+  - os: osx
+    osx_image: xcode9.4 # macOS 10.13
+    name: '10.13'
+  - os: osx
+    osx_image: xcode10.2 # macOS 10.14
+    name: '10.14'
+
+notifications:
+  email: false
+
